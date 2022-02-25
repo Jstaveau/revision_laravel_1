@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/{jonathan}', function($name){
-    return 'Le prénom est '.$name.'.';
+    return '<h2> Le prénom est '.$name.'.</h2>';
 });
