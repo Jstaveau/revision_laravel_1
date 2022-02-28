@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{jonathan}', function($name){
+Route::get('/prenom/{jonathan}', function($name){
     return '<h2> Le prénom est '.$name.'.</h2>';
+});
+
+Route::get('/number/{number}', function($number){
+    $number = (int)$number;
+    return view('welcome', compact('number'));
 });
