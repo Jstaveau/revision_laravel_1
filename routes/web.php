@@ -26,3 +26,6 @@ Route::get('/new/{var1}/{var2}', function($var1, $var2){
     $var2 = (int)$var2;
     return view('exo3', compact('var1', 'var2'));
 });
+Route::get('/couleur/{color}', function($color){
+    return view('color', compact('color'));
+});
