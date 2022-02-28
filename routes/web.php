@@ -21,3 +21,8 @@ Route::get('/number/{number}', function($number){
     $number = (int)$number;
     return view('welcome', compact('number'));
 });
+Route::get('/new/{var1}/{var2}', function($var1, $var2){
+    $var1 = (int)$var1;
+    $var2 = (int)$var2;
+    return view('exo3', compact('var1', 'var2'));
+});
